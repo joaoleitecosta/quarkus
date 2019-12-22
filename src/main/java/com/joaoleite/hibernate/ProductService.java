@@ -7,8 +7,11 @@ import javax.inject.Inject;
 import javax.persistence.EntityManager;
 import javax.transaction.Transactional;
 
+import org.eclipse.microprofile.opentracing.Traced;
+
 @ApplicationScoped
 @Transactional
+@Traced
 public class ProductService {
 
 	
